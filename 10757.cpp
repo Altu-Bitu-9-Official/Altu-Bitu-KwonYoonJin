@@ -4,6 +4,7 @@
 
 using namespace std;
 
+int main(){
     stack<int> st;
     string a, b, result;
     int temp, carry = 0; // carry 0으로 초기화 필수 (첫 번째 반복에서 쓰레기 값 x)
