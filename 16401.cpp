@@ -37,8 +37,10 @@ int main(){
     cin >> m >> n;
     vector<int> crackers(n);
     for(int i=0;i<n;i++){
-        cin >> crackers[i]; // 이미 오름차순
+        cin >> crackers[i]; 
     }
+    // 테스트케이스가 오름차순으로 주어져서 정렬하지 않자 틀렸습니다 뜸
+    // 이분탐색 정렬 필수!
     sort(crackers.begin(),crackers.end());
     cout << max_length(m, crackers);
 
